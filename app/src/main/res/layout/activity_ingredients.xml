@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngredientsActivity">
+
+    <TextView
+        android:id="@+id/txtOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Додаткові інгредієнти"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrder"
+        app:layout_constraintVertical_bias="0.1">
+
+        <CheckBox
+            android:id="@+id/cbxPineapple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ананас"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbxBacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Бекон"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbxTurkey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Індичка"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbxChickenFillet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Куряче філе"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbxOlives"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Маслини"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbEggplant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мисливські ковбаски"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbxHuntingSausages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Моцарелла"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"
+        android:text="Далі"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
